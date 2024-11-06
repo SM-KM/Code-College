@@ -93,11 +93,15 @@ int mult(nums nums) { return nums.x * nums.y; }
 nums grabbingInputs() {
   nums nums = {.x = 0, .y = 0};
 
+  std::cout << "Introduce the two numbers" << std::endl;
   while (true) {
-    std::cout << "Introduce the two numbers" << std::endl;
     if (!getValidInput(nums.x, "First number: "))
       continue;
 
+    break;
+  }
+
+  while (true) {
     if (!getValidInput(nums.y, "Second number: "))
       continue;
 

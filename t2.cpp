@@ -1,5 +1,5 @@
 // Santiago Vargas Rugeles
-// Arturo Pedraza
+// Arturo Pedraza Gonzalez
 
 #include <cmath>
 #include <cstddef>
@@ -272,7 +272,7 @@ void geometricMean(std::vector<int> nums) {
 
 void act_8() {
   std::vector<int> nums;
-  int currentNum;
+  int currentNum = -1;
 
   std::cout << "Start typing numbers and finish by typing a 0 \n" << std::endl;
 

@@ -3,7 +3,7 @@
   "configurePresets": [
     {
       "name": "debug",
-      "toolchainFile": "../../../src/vcpkg/scripts/buildsystems/vcpkg.cmake", 
+      "toolchainFile": "C:/Users/SMKM/src/vcpkg/scripts/buildsystems/vcpkg.cmake", 
       "cacheVariables": {
         "VCPKG_TARGET_TRIPLET": "x64-windows"
       }

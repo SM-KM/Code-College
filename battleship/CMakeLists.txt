@@ -1,19 +1,13 @@
-cmake_minimum_required(VERSION 3.31)
+cmake_minimum_required(VERSION 3.30)
 project(battleship)
+enable_language(CXX)
+set(CMAKE_CXX_STANDARD 20)
+
+find_package(SDL2 CONFIG REQUIRED)
+find_package(SFML COMPONENTS graphics window system audio REQUIRED)
 
 add_executable(battleship src/main.cpp)
 
-# find SDL2 pkg
-find_package(SDL2 CONFIG REQUIRED)
-
-#link SDL2
+# Link libraries
 target_link_libraries(battleship PRIVATE SDL2::SDL2 SDL2::SDL2main)
-find_package(glfw3 CONFIG REQUIRED)
-target_link_libraries(battleship PRIVATE glfw)
-
-find_package(OpenGL REQUIRED)
-target_link_libraries(battleship PUBLIC OpenGL::GL)
-
-
-
 
